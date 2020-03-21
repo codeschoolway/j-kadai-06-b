@@ -1,0 +1,459 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%
+}
+body {
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+/* .logo {
+    width: 210px;
+    margin-top: 14px;
+} */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom:12px;
+}
+header h1 {
+    text-align: center;
+    font-size: 16px;
+    /* letter-spacing: 0; */
+    line-height: 1.1;
+    margin-top: 20px;
+}
+header h1 a{
+    color: #918F89;
+}
+.page-header span {
+    display: block;
+}
+/* 各セクションのタイトル */
+h3 {
+    text-align: center;
+    font: normal normal normal 25px/53px 'Noto Sans JP';
+    letter-spacing: 2.5px;
+    color: #3B3B3B;
+    font-size: 25px;
+}
+.nav-main {
+    display: flex;
+    margin-top: 34px;
+    list-style: none;
+    text-align: left;
+    /* font: normal normal normal 16px/22px 'Noto Sans JP'; */
+    font-size: 16px;
+    line-height: 22px;
+    font-family: "Noto Sans JP";
+    /* letter-spacing: 0; */
+    color: #272727;
+}
+.nav-main li {
+    margin-left: 111px;
+}
+.nav-main a {
+    color: #432;
+    padding-bottom:10px;
+    opacity: 0.5;
+}
+.nav-main a:hover {
+    color: #3E3E3E;
+    border-bottom: 2px solid #3E3E3E;
+    opacity: 1;
+}
+.current-about a{
+    border-bottom: 2px solid #3E3E3E;
+    opacity: 1;
+}
+.wrapper {
+    max-width: 1500px;
+    margin:0 auto;
+}
+#home {
+    background-image: url(../images/AdobeStock_199226712@2x.png);
+    min-height: 100vh;
+}
+#home .page-title {
+    text-transform: none;
+}
+.bg-text{
+    font-weight: lighter;
+    font-size: 60px;
+    line-height: 82px;
+    font-family: 'Noto Sans';
+    color: #918F89;
+    width: 750px;
+    height: 136px;
+    top:354px;
+    text-align: left;
+    padding:31px 60px 23px 88px;
+    position: relative;
+    background-color: #ffff;
+    letter-spacing: 3px;
+    opacity: 0.8;
+}
+
+.main-msg-flex{
+    display: flex;
+    /* justify-content: space-between; */
+    margin-top: 142px;
+    margin-bottom: 200px;
+}
+
+.qa-big-txt/* ,
+.secondary-big-txt  */{
+    position: absolute;
+    left: 228px;
+    top: 50%;
+    /* transform: translateY(-50%) translateX(-50%); */
+    width: 0;
+    height: initial;
+    padding: 0;
+    background-color: initial;
+    opacity: 1;
+}
+.big-bg {
+    background-size: cover;
+    background-position: center top;
+    background-position: no-repeat;
+}
+.main-msg-left {
+    width: 48%;
+    text-align: right;
+    margin-right: 100px;
+}
+.main-msg-right {
+    width: 48%;
+}
+.main-msg-right h3 {
+    margin: 200px 0 40px 0;
+    text-align: unset;
+}
+.main-msg-right p {
+    text-align: left;
+    font-size: 18px;
+    font-family: "Noto Sans JP";
+    color: #3B3B3B;
+    line-height: 33px;
+}
+
+
+.items-flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    list-style-type: none;
+    width: 80%;
+    margin-bottom: 40px;
+}
+/* 
+.item-container-flex {
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 39px;
+}
+ */
+.item {
+    position: relative;
+    width: 30%;
+}
+.item-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #00000095;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+.item:hover .overlay {
+    height: 100%;
+}
+.item-text {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Noto Sans JP';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    text-shadow: 0px 0px 6px #000000E0;
+}
+.view-more {
+    text-align: center;
+    margin-bottom: 221px;
+    font: normal normal normal 21px/53px Noto Sans;
+    letter-spacing: 1.05px;
+    color: #3B3B3B;
+}
+
+
+.form-contact {
+    width: 463px;
+    text-align: center;
+    margin-bottom:190px;
+}
+/* form div {
+    text-align: center;
+    margin-bottom: 30px;
+} */
+input[type="text"],
+input[type="email"],
+textarea {
+    border: 0.5px solid #707070;
+    border-radius: 11px;
+    opacity: 0.6;
+    height: 35px;    
+    padding: 10px;
+    font-size: 1rem;
+    width: 463px;
+    margin-bottom: 30px;
+}
+textarea {
+    height: 156px;
+}
+/* input,
+textarea {
+    margin-bottom: 30px;
+} */
+/* 
+input[type="submit"] {
+   text-align: center;
+    border: none;
+    cursor: pointer;
+} */
+.button-pc {
+    /* background: #707070 0% 0% no-repeat padding-box; */
+    background-color: #707070;    
+    /* font: normal normal normal 15px/53px Noto Sans; */
+    font-size: 15px;
+    font-family: "Noto Sans";
+    letter-spacing: 0.75px;
+    color: #FFFFFF;
+ /*    width: 111px;
+    height: 35px; */
+    border-radius: 25px;
+    padding: 10px 25px;
+    line-height: 1;
+}
+.button-pc:hover {
+    background: #707070d8;
+}
+/* .button-pc {
+    background-color: #D1D1D1;
+    color: #707070;
+} */
+/* .button-wrapper {
+    text-align: center;
+} */
+.hstyle {
+    text-align: center;
+    margin-bottom: 246px;
+}
+h3.section-title {
+    margin-bottom: 50px;
+}
+/* h3.secondary-section-title {
+    margin-top: 86px;
+} */
+
+/* <footer> ***************/
+footer {
+    background: #918F89;
+    padding: 116px 0 0 0;
+}
+footer h1 {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.1;
+    margin-top: 0;
+}
+footer h1 a{
+    color: #ffffff;
+}
+footer .page-header {
+    padding-bottom: 0;
+    max-width: 65%;
+}
+footer .nav-main {
+    margin-top: 0;
+}
+footer .nav-main a{
+    color: #ffffff;
+    padding-bottom: 0;
+    opacity: 1;
+}
+footer .nav-main a:hover {    
+    border-bottom: none;
+    color: #ffffff;
+}
+footer p {
+    padding: 59px 0 35px;
+    text-align: center;
+    font-size: 10px;
+    color: #ffffff;
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        padding: 0 4%; /*スマホ向け 余白の指定*/
+    }
+    header {
+        z-index: 3;
+    }
+    header h1 {
+        margin-bottom: 20px;
+    }
+    nav {
+        width: 0;
+        height: 0;
+        visibility: collapse;
+    }
+    .page-header {
+        padding: 0;
+        flex-direction: column;
+        /*align-items: center;*/
+        background-color: #918F89;
+    }
+    .page-header h1 a{
+        color: #FFFFFF;
+        margin: 0;
+    }
+    /* .nav-main {
+        font: size 1rem;
+        margin-top: 10px;
+    } */
+    /* .current-about a{
+        border-bottom: none;
+    } */
+    .nav-main a:hover {
+        border-bottom: none;
+    }
+    .main-msg-flex{
+        z-index: 2;
+        flex-direction: column-reverse;
+        margin: 72px 0px 50px 0;
+    }
+    .main-msg-left,
+    .main-msg-right {
+        width: 100%;
+    }
+    /* .main-messagearticle {
+        margin-top: 30px;
+    } */
+    .main-msg-right {
+        text-align: center;
+        /* font: normal normal normal 14px/35px 'Noto Sans JP'; */
+        font-size: 14px;
+        line-height: 35px;
+        font-family: "Noto Sans JP";
+        letter-spacing: 0.42px;
+        color: #3B3B3B;
+        margin-bottom: 50px;
+    }
+    .main-msg-right h3 {
+        /* margin: 0 0 20px 0; */
+        margin-bottom: 20px;
+    }
+    .main-msg-right p {        
+        text-align: center;
+        white-space: pre-line;
+    }
+    .bg-text {
+        font-weight: normal;
+        font-size: 39px;
+        line-height: 260%;
+        font-family: "Noto Sans";
+        color: #918F89;
+        height: unset;
+        top:100px;
+        text-align: left;
+        padding:0;
+        position: absolute;
+        background-color: unset;
+        opacity: 0.8;
+        letter-spacing: 1.95px;
+        white-space: pre-line;
+        max-width: 100%;
+    }
+    .bg-text span {
+        font-weight: 100px;
+        padding:15px 15px 15px 54px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+    }
+  /*   h2.secondary-big-txt {
+        padding-top:150px;
+        text-align: center;        
+        font-weight: lighter;
+        font-size: 39px;
+        font-family: 'Noto Sans';
+        opacity: 0.8;
+        letter-spacing: 1.95px;
+        transform: initial;
+    } */
+
+
+    .items-flex {
+        flex-direction: column;
+        /* text-align: center; */
+    }
+    .item {
+        margin-bottom: 30px;
+    }
+    /* ３つの商品画像 */
+    .item {
+        width: unset;
+    }
+    .hstyle {
+        margin-bottom: 176px;
+    }
+    .view-more {
+        margin-bottom: 140px;
+    }
+    input[type="text"],
+    input[type="email"] {
+        width: 80%;
+    }
+    textarea {
+        width: 80%;
+    }
+    .form-contact div:last-child {
+        margin-bottom: 0;
+    }
+    .form-contact {
+        width: 100%;
+        margin-bottom: 178px;
+    }
+    footer {
+        padding: 70px 0 50px;
+    }
+    footer .page-header {
+        height: 40px;
+        padding-bottom:0;
+        margin-bottom:60px;
+    }
+    footer p {
+        padding: 0;
+    }
+    /* footer .nav-main{
+        display: none;
+    } */
+} 

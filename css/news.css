@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/* NEWSページ */
+.item-container {
+    margin-bottom: 320px;
+}
+.current-about a{
+    border-bottom: unset;
+    opacity: 0.5;
+}
+footer .current-about a{
+    border-bottom: unset;
+    opacity: 0.5;
+}
+.current-news a{
+    border-bottom: 2px solid #3E3E3E;
+    opacity: 1;
+}
+footer .current-news a{
+    border-bottom: unset;
+    opacity: 1;
+}
+#home {
+    background-image: url(../images/AdobeStock_295587079@2x.png);
+    min-height: 100vh;
+}
+
+@media (max-width: 600px) {
+    .bg-text{
+        font-weight: initial;
+        font-size: initial;
+        line-height: initial;
+        font-family: initial;
+        color: initial;
+        width: initial;
+        height: initial;
+        top:initial;
+        text-align: initial;
+        padding:initial;
+        position: initial;
+        background-color: initial;
+        letter-spacing: initial;
+        opacity: initial;
+    }
+    h2.secondary-big-txt {
+        color: #918F89;
+    }
+    .current-news a{
+        border-bottom: none;
+    }    
+}
